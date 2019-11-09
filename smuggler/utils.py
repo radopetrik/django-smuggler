@@ -37,7 +37,8 @@ def serialize_to_response(app_labels=None, exclude=None, response=None,
         'indent': indent,
         'use_natural_foreign_keys': True,
         'use_natural_primary_keys': True,
-        'use_natural': True
+        'natural_primary': True,
+        'natural_foreign': True
     })
     response.write(stream.getvalue())
     return response
